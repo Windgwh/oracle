@@ -806,7 +806,7 @@ NOCOMPRESS;
 select * from orders where order_id=1300;
 ```
 
-![image-20210427110955978](.\img\image-20210427110955978.png)
+<img src=".\img\image-20210427110955978.png" alt="image-20210427110955978" style="zoom:67%;" />
 
 ​	2.递归查询某个员工及其所有下属，子下属员工。
 
@@ -825,9 +825,9 @@ update from orders o set trade_receivable = (select sum(productnum * productpric
 select * from orders;
 ```
 
-![image-20210427114131181](.\img\image-20210427114131181.png)
+<img src=".\img\image-20210427114131181.png" alt="image-20210427114131181" style="zoom:67%;" />
 
-![image-20210427114209625](.\img\image-20210427114209625.png)
+<img src=".\img\image-20210427114209625.png" alt="image-20210427114209625" style="zoom:67%;" />
 
 ​	4.查询订单详表，要求显示订单的客户名称和客户电话，产品类型用汉字描述。
 

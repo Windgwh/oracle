@@ -806,7 +806,7 @@ NOCOMPRESS;
 select * from orders where order_id=1300;
 ```
 
-![image-20210427110955978](E:\School\大三\下期\oracle\实验\test4\img\image-20210427110955978.png)
+![image-20210427110955978](.\img\image-20210427110955978.png)
 
 ​	2.递归查询某个员工及其所有下属，子下属员工。
 
@@ -815,7 +815,7 @@ select level,employee_id,name,manager_id from employees
 START WITH employee_id = 1 CONNECT BY PRIOR employee_id = manager_id
 ```
 
-<img src="E:\School\大三\下期\oracle\实验\test4\img\image-20210427111526784.png" alt="image-20210427111526784" style="zoom:67%;" />
+<img src=".\img\image-20210427111526784.png" alt="image-20210427111526784" style="zoom:67%;" />
 
 ​	3.查询订单表，并且包括订单的订单应收货款
 
@@ -825,9 +825,9 @@ update from orders o set trade_receivable = (select sum(productnum * productpric
 select * from orders;
 ```
 
-![image-20210427114131181](E:\School\大三\下期\oracle\实验\test4\img\image-20210427114131181.png)
+![image-20210427114131181](.\img\image-20210427114131181.png)
 
-![image-20210427114209625](E:\School\大三\下期\oracle\实验\test4\img\image-20210427114209625.png)
+![image-20210427114209625](.\img\image-20210427114209625.png)
 
 ​	4.查询订单详表，要求显示订单的客户名称和客户电话，产品类型用汉字描述。
 
@@ -836,7 +836,7 @@ select o.customer_name,o.customer_tel,p.product_type from order_details od, orde
 where od.order_id = o.order_id and p.product_name = od.product_name;
 ```
 
-<img src="E:\School\大三\下期\oracle\实验\test4\img\image-20210427114606668.png" alt="image-20210427114606668" style="zoom:67%;" />
+<img src=".\img\image-20210427114606668.png" alt="image-20210427114606668" style="zoom:67%;" />
 
 ​	5.查询出所有空订单，即没有订单详单的订单。
 
@@ -845,7 +845,7 @@ select * from orders o
 where o.order_id not in (select order_id from order_details);
 ```
 
-<img src="E:\School\大三\下期\oracle\实验\test4\img\image-20210427114833748.png" alt="image-20210427114833748" style="zoom:67%;" />
+<img src=".\img\image-20210427114833748.png" alt="image-20210427114833748" style="zoom:67%;" />
 
 ​	6.查询部门表，同时显示部门的负责人姓名。
 
@@ -854,7 +854,7 @@ select d.*, e.name as 负责人 from deparments d,employee e
 where d.department_id = e.employee;
 ```
 
-<img src="E:\School\大三\下期\oracle\实验\test4\img\image-20210427115520194.png" alt="image-20210427115520194" style="zoom:67%;" />
+<img src=".\img\image-20210427115520194.png" alt="image-20210427115520194" style="zoom:67%;" />
 
 ​	7.查询部门表，统计每个部门的销售总金额。
 
@@ -866,7 +866,7 @@ where d.department_id = a.department_id
 group by d.department_name;
 ```
 
-<img src="E:\School\大三\下期\oracle\实验\test4\img\image-20210427183652363.png" alt="image-20210427183652363" style="zoom:67%;" />
+<img src=".\img\image-20210427183652363.png" alt="image-20210427183652363" style="zoom:67%;" />
 
 - 数据关系图如下
 

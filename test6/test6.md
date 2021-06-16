@@ -275,7 +275,7 @@ create tablespace gwh_02
 datafile './gwh_02.dbf ' size 50M
 ```
 
-![image-20210605124132734](img\image-20210605124132734.png)
+<img src=".\img\image-20210605124132734.png" alt="image-20210605124132734" style="zoom:67%;" />
 
 
 

@@ -50,8 +50,7 @@ BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
 TABLESPACE "GWH_02";
 ```
 
-![image-20210616222614365](.\img\image-20210616222614365.png)
-
+<img src=".\img\image-20210616222614365.png" alt="image-20210616222614365" style="zoom:67%;" />
 
 
 ```mysql
@@ -171,7 +170,7 @@ select count(*) as "商品种类" from product_details;
 
 <img src=".\img\image-20210616221025440.png" alt="image-20210616221025440" style="zoom:67%;" />
 
-![image-20210616221055144](.\img\image-20210616221055144.png)
+<img src=".\img\image-20210616221055144.png" alt="image-20210616221055144" style="zoom:67%;" />
 
 <img src=".\img\image-20210616221315287.png" alt="image-20210616221315287" style="zoom:67%;" />
 
@@ -254,7 +253,7 @@ end;
 /
 ```
 
-![image-20210616222740656](img\image-20210616222740656.png)
+<img src=".\img\image-20210616222740656.png" alt="image-20210616222740656" style="zoom:67%;" />
 
 <img src=".\img\image-20210616223905091.png" alt="image-20210616223905091" style="zoom:67%;" />
 
@@ -282,17 +281,17 @@ datafile './gwh_02.dbf ' size 50M
 
 2、创建con_temp_view 角色，只拥有连接查看数据库的权限。
 
-![image-20210605123214388](img\image-20210605123214388.png)
+<img src=".\img\image-20210605123214388.png" alt="image-20210605123214388" style="zoom:67%;" />
 
-![image-20210605124727506](img\image-20210605124727506.png)
+<img src=".\img\image-20210605124727506.png" alt="image-20210605124727506" style="zoom:67%;" />
 
-![image-20210605125004351](img\image-20210605125004351.png)
+<img src=".\img\image-20210605125004351.png" alt="image-20210605125004351" style="zoom:67%;" />
 
 
 
 3、创建管理员角色，拥有创建表、视图、存储过程、存储函数等权限，将表空间gwh_02赋予角色
 
-![image-20210605125253385](img\image-20210605125253385.png)
+<img src=".\img\image-20210605125253385.png" alt="image-20210605125253385" style="zoom:67%;" />
 
 
 
@@ -504,7 +503,7 @@ SELECT SUM(bytes) / (1024 * 1024) AS free_space, tablespace_name FROM dba_free_s
 SELECT SUM(bytes) / (1024 * 1024) AS free_space, tablespace_name  FROM dba_free_space WHERE tablespace_name='GWH_02' GROUP BY tablespace_name;
 ```
 
-![image-20210610105453012](img\image-20210610105453012.png)
+<img src=".\img\image-20210610105453012.png" alt="image-20210610105453012" style="zoom:67%;" />
 
 
 
@@ -580,7 +579,7 @@ select to_char(sysdate,'yyyy-mm-dd hh24:mi:ss') as currentdate from dual;
 
 <img src=".\img\image-20210614152359654.png" alt="image-20210614152359654" style="zoom: 67%;" />
 
-![image-20210614152427523](img\image-20210614152427523.png)
+<img src=".\img\image-20210614152427523.png" alt="image-20210614152427523" style="zoom:67%;" />
 
 
 
@@ -594,7 +593,7 @@ update gwh_user.consumers set consumer_age=consumer_age+1 where consumer_id = 1;
 
 
 
-![image-20210614152701293](img\image-20210614152701293.png)
+<img src=".\img\image-20210614152701293.png" alt="image-20210614152701293" style="zoom:67%;" />
 
 修改文件名，模拟文件损失
 
@@ -620,7 +619,7 @@ SQL> select * from consumers;
 可见，完全恢复成功，数据是最新的（即2021-04-27 08:03:01），无损失。
 ```
 
-![image-20210614153623866](img\image-20210614153623866.png)
+<img src=".\img\image-20210614153623866.png" alt="image-20210614153623866" style="zoom:67%;" />
 
 **选项2：单库不完全恢复,恢复到update语句之前的状态**
 
@@ -642,5 +641,5 @@ SQL> select * from consumers;
 可见，不完全恢复成功，数据回到了修改前的状态（即：2021-04-27 08:02:24）。
 ```
 
-![image-20210614154125944](img\image-20210614154125944.png)
+<img src=".\img\image-20210614154125944.png" alt="image-20210614154125944" style="zoom:67%;" />
 

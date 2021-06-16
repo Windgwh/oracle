@@ -50,7 +50,7 @@ BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
 TABLESPACE "GWH_02";
 ```
 
-![image-20210616222614365](E:\School\大三\下期\oracle\课件\期末\img\image-20210616222614365.png)
+![image-20210616222614365](.\img\image-20210616222614365.png)
 
 
 
@@ -169,11 +169,11 @@ select count(*) as "商品" from product;
 select count(*) as "商品种类" from product_details;
 ```
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210616221025440.png" alt="image-20210616221025440" style="zoom:67%;" />
+<img src=".\img\image-20210616221025440.png" alt="image-20210616221025440" style="zoom:67%;" />
 
-![image-20210616221055144](E:\School\大三\下期\oracle\课件\期末\img\image-20210616221055144.png)
+![image-20210616221055144](.\img\image-20210616221055144.png)
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210616221315287.png" alt="image-20210616221315287" style="zoom:67%;" />
+<img src=".\img\image-20210616221315287.png" alt="image-20210616221315287" style="zoom:67%;" />
 
 ```mysql
 -- 用户表
@@ -254,13 +254,13 @@ end;
 /
 ```
 
-![image-20210616222740656](E:\School\大三\下期\oracle\课件\期末\img\image-20210616222740656.png)
+![image-20210616222740656](img\image-20210616222740656.png)
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210616223905091.png" alt="image-20210616223905091" style="zoom:67%;" />
+<img src=".\img\image-20210616223905091.png" alt="image-20210616223905091" style="zoom:67%;" />
 
 1万条订单表数据
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210616223957935.png" alt="image-20210616223957935" style="zoom:67%;" />
+<img src=".\img\image-20210616223957935.png" alt="image-20210616223957935" style="zoom:67%;" />
 
 
 
@@ -276,23 +276,23 @@ create tablespace gwh_02
 datafile './gwh_02.dbf ' size 50M
 ```
 
-![image-20210605124132734](E:\School\大三\下期\oracle\课件\期末\img\image-20210605124132734.png)
+![image-20210605124132734](img\image-20210605124132734.png)
 
 
 
 2、创建con_temp_view 角色，只拥有连接查看数据库的权限。
 
-![image-20210605123214388](E:\School\大三\下期\oracle\课件\期末\img\image-20210605123214388.png)
+![image-20210605123214388](img\image-20210605123214388.png)
 
-![image-20210605124727506](E:\School\大三\下期\oracle\课件\期末\img\image-20210605124727506.png)
+![image-20210605124727506](img\image-20210605124727506.png)
 
-![image-20210605125004351](E:\School\大三\下期\oracle\课件\期末\img\image-20210605125004351.png)
+![image-20210605125004351](img\image-20210605125004351.png)
 
 
 
 3、创建管理员角色，拥有创建表、视图、存储过程、存储函数等权限，将表空间gwh_02赋予角色
 
-![image-20210605125253385](E:\School\大三\下期\oracle\课件\期末\img\image-20210605125253385.png)
+![image-20210605125253385](img\image-20210605125253385.png)
 
 
 
@@ -312,7 +312,7 @@ END Exam;
 /
 ```
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210609233853549.png" alt="image-20210609233853549" style="zoom: 50%;" />
+<img src=".\img\image-20210609233853549.png" alt="image-20210609233853549" style="zoom: 50%;" />
 
 
 
@@ -342,7 +342,7 @@ END Exam;
 /
 ```
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210610002012870.png" alt="image-20210610002012870" style="zoom:50%;" />
+<img src=".\img\image-20210610002012870.png" alt="image-20210610002012870" style="zoom:50%;" />
 
 
 
@@ -387,9 +387,9 @@ END Exam;
 /
 ```
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210610002225256.png" alt="image-20210610002225256" style="zoom:50%;" />
+<img src=".\img\image-20210610002225256.png" alt="image-20210610002225256" style="zoom:50%;" />
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210610002303928.png" alt="image-20210610002303928" style="zoom:50%;" />
+<img src=".\img\image-20210610002303928.png" alt="image-20210610002303928" style="zoom:50%;" />
 
 
 
@@ -428,7 +428,7 @@ END Exam;
 /
 ```
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210610002909276.png" alt="image-20210610002909276" style="zoom:50%;" />
+<img src=".\img\image-20210610002909276.png" alt="image-20210610002909276" style="zoom:50%;" />
 
 
 
@@ -460,7 +460,7 @@ END Exam;
 /
 ```
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210610003052174.png" alt="image-	" style="zoom:50%;" />
+<img src=".\img\image-20210610003052174.png" alt="image-	" style="zoom:50%;" />
 
 
 
@@ -468,9 +468,9 @@ END Exam;
 
 1、从pdborcl创建可插接数据库
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210611131633326.png" alt="image-20210611131633326" style="zoom:50%;" />
+<img src=".\img\image-20210611131633326.png" alt="image-20210611131633326" style="zoom:50%;" />
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210611131655039.png" alt="image-20210611131655039" style="zoom:50%;" />
+<img src=".\img\image-20210611131655039.png" alt="image-20210611131655039" style="zoom:50%;" />
 
 
 
@@ -494,7 +494,7 @@ UNION ALL
 SELECT NAME FROM v$controlfile;
 ```
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210610103329790.png" alt="image-20210610103329790" style="zoom:50%;" />
+<img src=".\img\image-20210610103329790.png" alt="image-20210610103329790" style="zoom:50%;" />
 
 3、查询自己创建的表空间的大小
 
@@ -504,7 +504,7 @@ SELECT SUM(bytes) / (1024 * 1024) AS free_space, tablespace_name FROM dba_free_s
 SELECT SUM(bytes) / (1024 * 1024) AS free_space, tablespace_name  FROM dba_free_space WHERE tablespace_name='GWH_02' GROUP BY tablespace_name;
 ```
 
-![image-20210610105453012](E:\School\大三\下期\oracle\课件\期末\img\image-20210610105453012.png)
+![image-20210610105453012](img\image-20210610105453012.png)
 
 
 
@@ -568,7 +568,7 @@ release channel c3;
 select file_name from dba_data_files;
 ```
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210611130149759.png" alt="image-20210611130149759" style="zoom:50%;" />
+<img src=".\img\image-20210611130149759.png" alt="image-20210611130149759" style="zoom:50%;" />
 
 查看表数据
 
@@ -578,9 +578,9 @@ select * from gwh_user.consumers;
 select to_char(sysdate,'yyyy-mm-dd hh24:mi:ss') as currentdate from dual;
 ```
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210614152359654.png" alt="image-20210614152359654" style="zoom: 67%;" />
+<img src=".\img\image-20210614152359654.png" alt="image-20210614152359654" style="zoom: 67%;" />
 
-![image-20210614152427523](E:\School\大三\下期\oracle\课件\期末\img\image-20210614152427523.png)
+![image-20210614152427523](img\image-20210614152427523.png)
 
 
 
@@ -590,11 +590,11 @@ select to_char(sysdate,'yyyy-mm-dd hh24:mi:ss') as currentdate from dual;
 update gwh_user.consumers set consumer_age=consumer_age+1 where consumer_id = 1;
 ```
 
-<img src="E:\School\大三\下期\oracle\课件\期末\img\image-20210611132732657.png" alt="image-20210611132732657" style="zoom:67%;" />
+<img src=".\img\image-20210611132732657.png" alt="image-20210611132732657" style="zoom:67%;" />
 
 
 
-![image-20210614152701293](E:\School\大三\下期\oracle\课件\期末\img\image-20210614152701293.png)
+![image-20210614152701293](img\image-20210614152701293.png)
 
 修改文件名，模拟文件损失
 
@@ -620,7 +620,7 @@ SQL> select * from consumers;
 可见，完全恢复成功，数据是最新的（即2021-04-27 08:03:01），无损失。
 ```
 
-![image-20210614153623866](E:\School\大三\下期\oracle\课件\期末\img\image-20210614153623866.png)
+![image-20210614153623866](img\image-20210614153623866.png)
 
 **选项2：单库不完全恢复,恢复到update语句之前的状态**
 
@@ -642,5 +642,5 @@ SQL> select * from consumers;
 可见，不完全恢复成功，数据回到了修改前的状态（即：2021-04-27 08:02:24）。
 ```
 
-![image-20210614154125944](E:\School\大三\下期\oracle\课件\期末\img\image-20210614154125944.png)
+![image-20210614154125944](img\image-20210614154125944.png)
 
